@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <h1 class="homeh1">Create Contact</h1>
+    <form class="form" action="/create-contact" method="POST">
+      <input type="text" name="name" placeholder="Enter Name" required />
+      <input type="number" name="phone" placeholder="Enter Phone" required />
+      <input type="email" name="email" placeholder="Enter Email" required />
+
+      <button type="submit"><i class="fas fa-user-plus"></i> Add</button>
+    </form>
+    <br /><br />
+    <h3 class="homeh3">To view Contacts Go to : /display-contacts</h3>
+    <p class="homep3">
+      Note: Remember You wont be able to add Duplicate Email and Phone number.
+    </p>
+    <script src="js/home.js"></script>
+  </body>
+</html>

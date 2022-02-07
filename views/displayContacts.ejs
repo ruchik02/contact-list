@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Contacts</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/home1.css" />
+  </head>
+  <body>
+    <h1 class="heading"><i class="fas fa-address-book"></i> Contact List</h1>
+    <div class="">
+      <ul style="list-style-type: none">
+        <% for(let i of contact_List) { %>
+        <li>
+          <div class="contacts-container">
+            <div class="contact-details">
+              <p class="name"><i class="fas fa-id-badge"></i> <%= i.name %></p>
+              <p class="phone"><%= i.phone %></p>
+              <p class="email"><%= i.email %></p>
+            </div>
+            <div class="delete-btn">
+              <a href="/delete-contact/?id=<%= i._id %>"
+                ><i class="fas fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>

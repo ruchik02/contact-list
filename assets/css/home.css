@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  padding: 15px;
+}
+
+.homeh1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  padding: 15px;
+}
+
+.homeh3 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+.homep3 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.contacts-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-details {
+  font-size: 20px;
+  padding: 4px;
+}
+
+.name {
+  padding: 5px;
+  color: rgb(139, 40, 185);
+  background-color: rgb(224, 215, 202);
+}
+
+.phone {
+  padding: 5px;
+  color: rgb(72, 33, 109);
+}
+
+.form {
+  text-align: center;
+  padding: 30px;
+}
+
+form input {
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 2px;
+}
+body{
+  text-align: center;
+  background-color: rgba(25, 230, 18, 0.774);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+h1{
+  color: white;
+  font-size: 90px;
+}
+input{
+  width: 17vw;
+  height: 2.5vw;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 15px;
+  color: black;
+  border: 2px solid white;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all ease-in-out 0.1s;
+}
+input::placeholder{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 12px;
+}
+input:hover{
+  box-shadow: 0px 0px 6px 3px white;
+}
+button{
+  width: 120px;
+  height: 60px;
+  margin-top: 5px;
+  font-size: 1rem;
+  outline: none;
+  background-image: linear-gradient(-20deg, #041520 0%, #4e4376 100%);
+  border: none;
+  font-weight: 500;
+  color: white;
+  border-radius: 18px;
+   font-family: Verdana,
+   Geneva,
+   Tahoma,
+   sans-serif;
+   transition: all ease-in-out 0.1s;  
+}
+
+button:hover{
+  box-shadow: 0px 0px 6px 3px white;
+  background-image: linear-gradient(-20deg, #041520 0%, #4f476dc7 100%);
+  color:white;
+}
+.list-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.list-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: auto;
+  height: 67vh;
+  overflow-y: hidden;
+}
+li{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  background-image: linear-gradient(to right, #094250 0%, #092b41 100%);
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+  opacity: 0.8;
+  border-radius: 20px;
+  padding: 10px;
+  transition:  box-shadow ease-in-out 0.1s;
+  font-weight: 700;
+  color: white;
+  font-style: italic;
+}
+
+
+li:hover{
+  box-shadow: 0px 0px 6px 3px white;
+  color: white;
+  opacity: 1;
+}
+.list-container ul li p{
+  display: inline-block;   
+}
+a{
+  padding: 5px;
+  animation: deleteButton;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+@keyframes deleteButton{
+  0%{
+      color: rgb(255, 53, 53);
+  }
+
+  50%{
+      color: gold
+  }
+  10%{
+      color: greenyellow;
+  }
+}
